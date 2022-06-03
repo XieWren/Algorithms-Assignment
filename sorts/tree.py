@@ -73,7 +73,7 @@ class BinarySearchTree:
             self._recInorderTrav(subtree.right, array)
 
 
-def tree_sort(array, key, direction):
+def tree_sort(array, key, direction = "A"):
     binary_tree = BinarySearchTree()
     while array != []:
         # Remove from list, into binary tree
