@@ -1,3 +1,13 @@
+from sys import path as sys_path
+from os import path as os_path
+
+current = os_path.dirname(os_path.realpath(__file__))
+parent = os_path.dirname(current)
+
+sys_path.append(parent)
+
+from tabulate_data import tabulate_data
+
 def search_range(data, lower, upper):
 
     found = []
@@ -16,15 +26,6 @@ def search_range(data, lower, upper):
 
 if __name__ == "__main__":
 
-    from sys import path as sys_path
-    from os import path as os_path
-
-    current = os_path.dirname(os_path.realpath(__file__))
-    parent = os_path.dirname(current)
-
-    sys_path.append(parent)
-
-    from tabulate_data import tabulate_data
     from sorts.tree import tree_sort
 
     array = [

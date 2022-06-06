@@ -1,5 +1,6 @@
 # Write report
 # Patience, bead (gravity), bitonic, piegeonhole, shell, radix
+# Range check: Binary, Fibonacci
 
 from random import randint, choice
 
